@@ -18,6 +18,7 @@ public class DefaultSuggestionPresenter<T extends Tag> implements SuggestionPres
             span.setInnerText(tag.getTag());
         }
         e.appendChild(span);
+	    
     }
 
 

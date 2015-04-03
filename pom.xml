@@ -14,13 +14,13 @@
         <dependency>
             <groupId>com.google.gwt</groupId>
             <artifactId>gwt-servlet</artifactId>
-            <version>2.3.0</version>
+            <version>2.7.0</version>
             <scope>runtime</scope>
         </dependency>
         <dependency>
             <groupId>com.google.gwt</groupId>
             <artifactId>gwt-user</artifactId>
-            <version>2.3.0</version>
+            <version>2.7.0</version>
             <scope>provided</scope>
         </dependency>
     </dependencies>
@@ -87,14 +87,12 @@
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>gwt-maven-plugin</artifactId>
-                <version>2.3.0</version>
+                <version>2.7.0</version>
                 <configuration>
-                    <logLevel>DEBUG</logLevel>
                     <output>${basedir}/src/test/war</output>
                     <runTarget>InputTagTest/tagging.html</runTarget>
                     <webXml>${basedir}/src/test/war/WEB-INF/web.xml</webXml>
                     <hostedWebapp>${basedir}/src/test/war</hostedWebapp>
-                    <noServer>false</noServer>                    
                 </configuration>
             </plugin>
         </plugins>
